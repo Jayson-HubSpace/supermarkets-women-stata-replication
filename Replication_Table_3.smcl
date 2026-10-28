@@ -1,0 +1,326 @@
+{smcl}
+{com}{sf}{ul off}{txt}{hline 110}
+{res}Table 3 | Supermarket access and individual energy and macronutrient intake
+{txt}{hline 110}
+Study: Supermarkets benefit women by reducing time spent on unpaid housework without lowering nutritional quality.
+Data: China Health and Nutrition Survey, 2004, 2006, 2009 and 2011; unweighted panel analysis.
+Treatment: supermarket access within 5 km. Always-treated communities are excluded.
+Controls: age, age squared, dietary knowledge, household size, ownership of a car, motorcycle,
+refrigerator, microwave and pressure cooker, traditional market development, and local economic activity.
+Fixed effects: individual and province by survey period.
+Standard errors: clustered by community and sex.
+All numerical results below are recomputed from the supplied analysis data in Stata 18 MP.
+N reports observations used by the estimator; model input counts are shown separately.
+Significance: *** p<0.01; ** p<0.05; * p<0.10. Confidence level: 95%.
+Estimator: CS-DID regression adjustment, never-treated controls; overall ATET.
+Sample: adult women and men. Outcomes are daily per-capita intakes.
+Panels: A energy (kcal/day); B protein, C fat, D carbohydrates (grams/day).
+Columns: (1) total; (2) unprocessed; (3) moderately processed; (4) highly processed foods.
+
+{hline 110}
+{res}Panel A | Column (1)
+{txt}Outcome: Total daily energy intake in kcal
+Model input observations:      9821
+Observations used by estimator:      9598
+Clusters used:       337
+Overall treatment effect
+{res}
+{txt}{col 1}Overall ATET{col 58}{lalign 13:Number of obs}{col 71} = {res}{ralign 5:9,598}
+
+{txt}{ralign 84:(Std. err. adjusted for {res:337} clusters in {res:community_sex_id})}
+{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 20}{c |}{col 32}    Robust
+{col 1}      energy_total{col 20}{c |}       ATET{col 32}   std. err.{col 44}      z{col 52}   P>|z|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+supermarket_access {c |}
+{space 9}(1 vs 0)  {c |}{col 20}{res}{space 2}-193.9259{col 32}{space 2} 63.23572{col 43}{space 1}   -3.07{col 52}{space 3}0.002{col 60}{space 4}-317.8657{col 73}{space 3}-69.98621
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{hline 110}
+{res}Panel A | Column (2)
+{txt}Outcome: Daily energy from unprocessed foods in kcal
+Model input observations:      9821
+Observations used by estimator:      9598
+Clusters used:       337
+Overall treatment effect
+{res}
+{txt}{col 1}Overall ATET{col 58}{lalign 13:Number of obs}{col 71} = {res}{ralign 5:9,598}
+
+{txt}{ralign 84:(Std. err. adjusted for {res:337} clusters in {res:community_sex_id})}
+{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 20}{c |}{col 32}    Robust
+{col 1}energy_unprocessed{col 20}{c |}       ATET{col 32}   std. err.{col 44}      z{col 52}   P>|z|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+supermarket_access {c |}
+{space 9}(1 vs 0)  {c |}{col 20}{res}{space 2}-273.1192{col 32}{space 2} 87.06207{col 43}{space 1}   -3.14{col 52}{space 3}0.002{col 60}{space 4}-443.7577{col 73}{space 3}-102.4806
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{hline 110}
+{res}Panel A | Column (3)
+{txt}Outcome: Daily energy from moderately processed foods in kcal
+Model input observations:      9821
+Observations used by estimator:      9598
+Clusters used:       337
+Overall treatment effect
+{res}
+{txt}{col 1}Overall ATET{col 58}{lalign 13:Number of obs}{col 71} = {res}{ralign 5:9,598}
+
+{txt}{ralign 84:(Std. err. adjusted for {res:337} clusters in {res:community_sex_id})}
+{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 20}{c |}{col 32}    Robust
+{col 1}   energy_moderate{col 20}{c |}       ATET{col 32}   std. err.{col 44}      z{col 52}   P>|z|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+supermarket_access {c |}
+{space 9}(1 vs 0)  {c |}{col 20}{res}{space 2} 92.25583{col 32}{space 2} 47.61227{col 43}{space 1}    1.94{col 52}{space 3}0.053{col 60}{space 4}-1.062496{col 73}{space 3} 185.5742
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{hline 110}
+{res}Panel A | Column (4)
+{txt}Outcome: Daily energy from highly processed foods in kcal
+Model input observations:      9821
+Observations used by estimator:      9598
+Clusters used:       337
+Overall treatment effect
+{res}
+{txt}{col 1}Overall ATET{col 58}{lalign 13:Number of obs}{col 71} = {res}{ralign 5:9,598}
+
+{txt}{ralign 84:(Std. err. adjusted for {res:337} clusters in {res:community_sex_id})}
+{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 20}{c |}{col 32}    Robust
+{col 1}     energy_highly{col 20}{c |}       ATET{col 32}   std. err.{col 44}      z{col 52}   P>|z|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+supermarket_access {c |}
+{space 9}(1 vs 0)  {c |}{col 20}{res}{space 2}-10.81619{col 32}{space 2} 25.24058{col 43}{space 1}   -0.43{col 52}{space 3}0.668{col 60}{space 4}-60.28681{col 73}{space 3} 38.65443
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{hline 110}
+{res}Panel B | Column (1)
+{txt}Outcome: Total daily protein intake in grams
+Model input observations:      9821
+Observations used by estimator:      9598
+Clusters used:       337
+Overall treatment effect
+{res}
+{txt}{col 1}Overall ATET{col 58}{lalign 13:Number of obs}{col 71} = {res}{ralign 5:9,598}
+
+{txt}{ralign 84:(Std. err. adjusted for {res:337} clusters in {res:community_sex_id})}
+{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 20}{c |}{col 32}    Robust
+{col 1}     protein_total{col 20}{c |}       ATET{col 32}   std. err.{col 44}      z{col 52}   P>|z|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+supermarket_access {c |}
+{space 9}(1 vs 0)  {c |}{col 20}{res}{space 2}-3.045616{col 32}{space 2} 2.243592{col 43}{space 1}   -1.36{col 52}{space 3}0.175{col 60}{space 4}-7.442976{col 73}{space 3} 1.351745
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{hline 110}
+{res}Panel B | Column (2)
+{txt}Outcome: Daily protein from unprocessed foods in grams
+Model input observations:      9821
+Observations used by estimator:      9598
+Clusters used:       337
+Overall treatment effect
+{res}
+{txt}{col 1}Overall ATET{col 58}{lalign 13:Number of obs}{col 71} = {res}{ralign 5:9,598}
+
+{txt}{ralign 84:(Std. err. adjusted for {res:337} clusters in {res:community_sex_id})}
+{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 20}{c |}{col 32}    Robust
+{col 1}protein_unproces~d{col 20}{c |}       ATET{col 32}   std. err.{col 44}      z{col 52}   P>|z|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+supermarket_access {c |}
+{space 9}(1 vs 0)  {c |}{col 20}{res}{space 2}-4.213769{col 32}{space 2} 2.265896{col 43}{space 1}   -1.86{col 52}{space 3}0.063{col 60}{space 4}-8.654843{col 73}{space 3}  .227305
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{hline 110}
+{res}Panel B | Column (3)
+{txt}Outcome: Daily protein from moderately processed foods in grams
+Model input observations:      9821
+Observations used by estimator:      9598
+Clusters used:       337
+Overall treatment effect
+{res}
+{txt}{col 1}Overall ATET{col 58}{lalign 13:Number of obs}{col 71} = {res}{ralign 5:9,598}
+
+{txt}{ralign 84:(Std. err. adjusted for {res:337} clusters in {res:community_sex_id})}
+{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 20}{c |}{col 32}    Robust
+{col 1}  protein_moderate{col 20}{c |}       ATET{col 32}   std. err.{col 44}      z{col 52}   P>|z|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+supermarket_access {c |}
+{space 9}(1 vs 0)  {c |}{col 20}{res}{space 2} 1.976098{col 32}{space 2} 1.179188{col 43}{space 1}    1.68{col 52}{space 3}0.094{col 60}{space 4}-.3350682{col 73}{space 3} 4.287263
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{hline 110}
+{res}Panel B | Column (4)
+{txt}Outcome: Daily protein from highly processed foods in grams
+Model input observations:      9821
+Observations used by estimator:      9598
+Clusters used:       337
+Overall treatment effect
+{res}
+{txt}{col 1}Overall ATET{col 58}{lalign 13:Number of obs}{col 71} = {res}{ralign 5:9,598}
+
+{txt}{ralign 84:(Std. err. adjusted for {res:337} clusters in {res:community_sex_id})}
+{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 20}{c |}{col 32}    Robust
+{col 1}    protein_highly{col 20}{c |}       ATET{col 32}   std. err.{col 44}      z{col 52}   P>|z|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+supermarket_access {c |}
+{space 9}(1 vs 0)  {c |}{col 20}{res}{space 2}-.6967119{col 32}{space 2} .6874132{col 43}{space 1}   -1.01{col 52}{space 3}0.311{col 60}{space 4}-2.044017{col 73}{space 3} .6505932
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{hline 110}
+{res}Panel C | Column (1)
+{txt}Outcome: Total daily fat intake in grams
+Model input observations:      9821
+Observations used by estimator:      9598
+Clusters used:       337
+Overall treatment effect
+{res}
+{txt}{col 1}Overall ATET{col 58}{lalign 13:Number of obs}{col 71} = {res}{ralign 5:9,598}
+
+{txt}{ralign 84:(Std. err. adjusted for {res:337} clusters in {res:community_sex_id})}
+{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 20}{c |}{col 32}    Robust
+{col 1}         fat_total{col 20}{c |}       ATET{col 32}   std. err.{col 44}      z{col 52}   P>|z|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+supermarket_access {c |}
+{space 9}(1 vs 0)  {c |}{col 20}{res}{space 2} 5.098862{col 32}{space 2} 2.831774{col 43}{space 1}    1.80{col 52}{space 3}0.072{col 60}{space 4}-.4513131{col 73}{space 3} 10.64904
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{hline 110}
+{res}Panel C | Column (2)
+{txt}Outcome: Daily fat from unprocessed foods in grams
+Model input observations:      9821
+Observations used by estimator:      9598
+Clusters used:       337
+Overall treatment effect
+{res}
+{txt}{col 1}Overall ATET{col 58}{lalign 13:Number of obs}{col 71} = {res}{ralign 5:9,598}
+
+{txt}{ralign 84:(Std. err. adjusted for {res:337} clusters in {res:community_sex_id})}
+{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 20}{c |}{col 32}    Robust
+{col 1}   fat_unprocessed{col 20}{c |}       ATET{col 32}   std. err.{col 44}      z{col 52}   P>|z|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+supermarket_access {c |}
+{space 9}(1 vs 0)  {c |}{col 20}{res}{space 2}-5.466346{col 32}{space 2} 3.298975{col 43}{space 1}   -1.66{col 52}{space 3}0.098{col 60}{space 4}-11.93222{col 73}{space 3} .9995259
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{hline 110}
+{res}Panel C | Column (3)
+{txt}Outcome: Daily fat from moderately processed foods in grams
+Model input observations:      9821
+Observations used by estimator:      9598
+Clusters used:       337
+Overall treatment effect
+{res}
+{txt}{col 1}Overall ATET{col 58}{lalign 13:Number of obs}{col 71} = {res}{ralign 5:9,598}
+
+{txt}{ralign 84:(Std. err. adjusted for {res:337} clusters in {res:community_sex_id})}
+{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 20}{c |}{col 32}    Robust
+{col 1}      fat_moderate{col 20}{c |}       ATET{col 32}   std. err.{col 44}      z{col 52}   P>|z|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+supermarket_access {c |}
+{space 9}(1 vs 0)  {c |}{col 20}{res}{space 2} 10.22209{col 32}{space 2} 3.246394{col 43}{space 1}    3.15{col 52}{space 3}0.002{col 60}{space 4}  3.85927{col 73}{space 3}  16.5849
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{hline 110}
+{res}Panel C | Column (4)
+{txt}Outcome: Daily fat from highly processed foods in grams
+Model input observations:      9821
+Observations used by estimator:      9598
+Clusters used:       337
+Overall treatment effect
+{res}
+{txt}{col 1}Overall ATET{col 58}{lalign 13:Number of obs}{col 71} = {res}{ralign 5:9,598}
+
+{txt}{ralign 84:(Std. err. adjusted for {res:337} clusters in {res:community_sex_id})}
+{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 20}{c |}{col 32}    Robust
+{col 1}        fat_highly{col 20}{c |}       ATET{col 32}   std. err.{col 44}      z{col 52}   P>|z|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+supermarket_access {c |}
+{space 9}(1 vs 0)  {c |}{col 20}{res}{space 2} 1.006161{col 32}{space 2} 1.104485{col 43}{space 1}    0.91{col 52}{space 3}0.362{col 60}{space 4}-1.158589{col 73}{space 3} 3.170911
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{hline 110}
+{res}Panel D | Column (1)
+{txt}Outcome: Total daily carbohydrate intake in grams
+Model input observations:      9821
+Observations used by estimator:      9598
+Clusters used:       337
+Overall treatment effect
+{res}
+{txt}{col 1}Overall ATET{col 58}{lalign 13:Number of obs}{col 71} = {res}{ralign 5:9,598}
+
+{txt}{ralign 84:(Std. err. adjusted for {res:337} clusters in {res:community_sex_id})}
+{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 20}{c |}{col 32}    Robust
+{col 1}carbohydrate_total{col 20}{c |}       ATET{col 32}   std. err.{col 44}      z{col 52}   P>|z|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+supermarket_access {c |}
+{space 9}(1 vs 0)  {c |}{col 20}{res}{space 2}-51.25144{col 32}{space 2} 13.47207{col 43}{space 1}   -3.80{col 52}{space 3}0.000{col 60}{space 4}-77.65621{col 73}{space 3}-24.84667
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{hline 110}
+{res}Panel D | Column (2)
+{txt}Outcome: Daily carbohydrate from unprocessed foods in grams
+Model input observations:      9821
+Observations used by estimator:      9598
+Clusters used:       337
+Overall treatment effect
+{res}
+{txt}{col 1}Overall ATET{col 58}{lalign 13:Number of obs}{col 71} = {res}{ralign 5:9,598}
+
+{txt}{ralign 84:(Std. err. adjusted for {res:337} clusters in {res:community_sex_id})}
+{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 20}{c |}{col 32}    Robust
+{col 1}carbohydrate_unp~d{col 20}{c |}       ATET{col 32}   std. err.{col 44}      z{col 52}   P>|z|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+supermarket_access {c |}
+{space 9}(1 vs 0)  {c |}{col 20}{res}{space 2}-64.57252{col 32}{space 2} 18.91431{col 43}{space 1}   -3.41{col 52}{space 3}0.001{col 60}{space 4}-101.6439{col 73}{space 3}-27.50115
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{hline 110}
+{res}Panel D | Column (3)
+{txt}Outcome: Daily carbohydrate from moderately processed foods in grams
+Model input observations:      9821
+Observations used by estimator:      9598
+Clusters used:       337
+Overall treatment effect
+{res}
+{txt}{col 1}Overall ATET{col 58}{lalign 13:Number of obs}{col 71} = {res}{ralign 5:9,598}
+
+{txt}{ralign 84:(Std. err. adjusted for {res:337} clusters in {res:community_sex_id})}
+{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 20}{c |}{col 32}    Robust
+{col 1}carbohydrate_mod~e{col 20}{c |}       ATET{col 32}   std. err.{col 44}      z{col 52}   P>|z|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+supermarket_access {c |}
+{space 9}(1 vs 0)  {c |}{col 20}{res}{space 2} 12.98131{col 32}{space 2} 7.735586{col 43}{space 1}    1.68{col 52}{space 3}0.093{col 60}{space 4}-2.180163{col 73}{space 3} 28.14278
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{hline 110}
+{res}Panel D | Column (4)
+{txt}Outcome: Daily carbohydrate from highly processed foods in grams
+Model input observations:      9821
+Observations used by estimator:      9598
+Clusters used:       337
+Overall treatment effect
+{res}
+{txt}{col 1}Overall ATET{col 58}{lalign 13:Number of obs}{col 71} = {res}{ralign 5:9,598}
+
+{txt}{ralign 84:(Std. err. adjusted for {res:337} clusters in {res:community_sex_id})}
+{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 20}{c |}{col 32}    Robust
+{col 1}carbohydrate_hig~y{col 20}{c |}       ATET{col 32}   std. err.{col 44}      z{col 52}   P>|z|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+supermarket_access {c |}
+{space 9}(1 vs 0)  {c |}{col 20}{res}{space 2} .3723566{col 32}{space 2} 1.532465{col 43}{space 1}    0.24{col 52}{space 3}0.808{col 60}{space 4} -2.63122{col 73}{space 3} 3.375933
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{res}End of Table 3 replication.
+{smcl}
+{res}{sf}{ul off}

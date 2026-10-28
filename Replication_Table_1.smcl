@@ -1,0 +1,218 @@
+{smcl}
+{com}{sf}{ul off}{txt}{hline 110}
+{res}Table 1 | Supermarket access and women's food shopping and cooking time
+{txt}{hline 110}
+Study: Supermarkets benefit women by reducing time spent on unpaid housework without lowering nutritional quality.
+Data: China Health and Nutrition Survey, 2004, 2006, 2009 and 2011; unweighted panel analysis.
+Treatment: supermarket access within 5 km. Always-treated communities are excluded.
+Controls: age, age squared, dietary knowledge, household size, ownership of a car, motorcycle,
+refrigerator, microwave and pressure cooker, traditional market development, and local economic activity.
+Fixed effects: individual and province by survey period.
+Standard errors: clustered by community (women-only community-sex identifier).
+All numerical results below are recomputed from the supplied analysis data in Stata 18 MP.
+N reports observations used by the estimator; model input counts are shown separately.
+Significance: *** p<0.01; ** p<0.05; * p<0.10. Confidence level: 95%.
+Panel A: CS-DID regression adjustment with never-treated controls; overall ATET.
+Panels B-C: two-stage DID with controls in the first stage and individual fixed effects.
+Panel B estimates the effect per additional supermarket; Panel C uses 0 as the reference category.
+Columns: (1) log shopping minutes; (2) shopping minutes; (3) log cooking minutes; (4) cooking minutes.
+Zero shopping time is retained in level specifications and has no defined logarithm.
+
+{res}Sample size note for Panel A
+{txt}Complete-case observations in columns (1)-(4): 4,528; 5,160; 5,098; 5,098.
+CS-DID estimation observations in columns (1)-(4): 4,394; 5,093; 5,031; 5,031.
+The complete-case counts are also reproduced by reg and xtreg with individual fixed effects.
+CS-DID identifies treatment cohorts within each outcome-specific, complete-case individual panel.
+Individuals with no observed untreated period are classified as Always treated and excluded.
+This rule excludes 134 observations in column (1), and 67 in each of columns (2)-(4).
+For log shopping time, 70 excluded observations belong to 47 women whose earlier untreated
+shopping times were all zero: taking logarithms makes those earlier outcomes missing.
+The other 64 excluded log-shopping observations have no untreated record in the supplied data.
+In columns (2)-(4), the 67 excluded observations belong to 50 women with no untreated record.
+Single-observation individuals are not excluded as a general rule: CS-DID retains 716 such
+observations in column (1), 700 in column (2), and 646 in each of columns (3)-(4).
+Counts refer to individual-wave observations. Each panel reports its estimator-specific N below.
+
+{hline 110}
+{res}Panel A | Column (1)
+{txt}Outcome: Natural log of analysis shopping minutes per day
+Model input observations:      5161
+Observations used by estimator:      4394
+Clusters used:       167
+Overall treatment effect
+{res}
+{txt}{col 1}Overall ATET{col 58}{lalign 13:Number of obs}{col 71} = {res}{ralign 5:4,394}
+
+{txt}{ralign 84:(Std. err. adjusted for {res:167} clusters in {res:community_sex_id})}
+{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 20}{c |}{col 32}    Robust
+{col 1}log_shopping_min~s{col 20}{c |}       ATET{col 32}   std. err.{col 44}      z{col 52}   P>|z|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+supermarket_access {c |}
+{space 9}(1 vs 0)  {c |}{col 20}{res}{space 2}-.2697838{col 32}{space 2} .0966413{col 43}{space 1}   -2.79{col 52}{space 3}0.005{col 60}{space 4}-.4591972{col 73}{space 3}-.0803704
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{hline 110}
+{res}Panel A | Column (2)
+{txt}Outcome: Food shopping time in minutes per day
+Model input observations:      5161
+Observations used by estimator:      5093
+Clusters used:       167
+Overall treatment effect
+{res}
+{txt}{col 1}Overall ATET{col 58}{lalign 13:Number of obs}{col 71} = {res}{ralign 5:5,093}
+
+{txt}{ralign 84:(Std. err. adjusted for {res:167} clusters in {res:community_sex_id})}
+{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 20}{c |}{col 32}    Robust
+{col 1}  shopping_minutes{col 20}{c |}       ATET{col 32}   std. err.{col 44}      z{col 52}   P>|z|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+supermarket_access {c |}
+{space 9}(1 vs 0)  {c |}{col 20}{res}{space 2}-5.394348{col 32}{space 2} 3.012685{col 43}{space 1}   -1.79{col 52}{space 3}0.073{col 60}{space 4} -11.2991{col 73}{space 3}  .510406
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{hline 110}
+{res}Panel A | Column (3)
+{txt}Outcome: Natural log cooking time used in log specifications
+Model input observations:      5161
+Observations used by estimator:      5031
+Clusters used:       167
+Overall treatment effect
+{res}
+{txt}{col 1}Overall ATET{col 58}{lalign 13:Number of obs}{col 71} = {res}{ralign 5:5,031}
+
+{txt}{ralign 84:(Std. err. adjusted for {res:167} clusters in {res:community_sex_id})}
+{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 20}{c |}{col 32}    Robust
+{col 1}log_cooking_minu~s{col 20}{c |}       ATET{col 32}   std. err.{col 44}      z{col 52}   P>|z|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+supermarket_access {c |}
+{space 9}(1 vs 0)  {c |}{col 20}{res}{space 2}-.2132737{col 32}{space 2} .0855701{col 43}{space 1}   -2.49{col 52}{space 3}0.013{col 60}{space 4}-.3809881{col 73}{space 3}-.0455593
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{hline 110}
+{res}Panel A | Column (4)
+{txt}Outcome: Cooking time in minutes per day for level specifications
+Model input observations:      5161
+Observations used by estimator:      5031
+Clusters used:       167
+Overall treatment effect
+{res}
+{txt}{col 1}Overall ATET{col 58}{lalign 13:Number of obs}{col 71} = {res}{ralign 5:5,031}
+
+{txt}{ralign 84:(Std. err. adjusted for {res:167} clusters in {res:community_sex_id})}
+{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 20}{c |}{col 32}    Robust
+{col 1}   cooking_minutes{col 20}{c |}       ATET{col 32}   std. err.{col 44}      z{col 52}   P>|z|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+supermarket_access {c |}
+{space 9}(1 vs 0)  {c |}{col 20}{res}{space 2}  -17.109{col 32}{space 2} 6.597843{col 43}{space 1}   -2.59{col 52}{space 3}0.010{col 60}{space 4}-30.04053{col 73}{space 3}-4.177462
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{hline 110}
+{res}Panel B | Column (1)
+{txt}Outcome: Natural log of analysis shopping minutes per day
+Model input observations:      5161
+Observations used by estimator:      4394
+{res}{txt}{ralign 83:(Std. err. adjusted for clustering on {res:community_sex_id})}
+{hline 18}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 19}{c |} Coefficient{col 31}  Std. err.{col 43}      z{col 51}   P>|z|{col 59}     [95% con{col 72}f. interval]
+{hline 18}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+supermarket_count {c |}{col 19}{res}{space 2}-.1271121{col 31}{space 2} .0353836{col 42}{space 1}   -3.59{col 51}{space 3}0.000{col 59}{space 4}-.1964627{col 72}{space 3}-.0577615
+{txt}{hline 18}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{hline 110}
+{res}Panel B | Column (2)
+{txt}Outcome: Food shopping time in minutes per day
+Model input observations:      5161
+Observations used by estimator:      5093
+{res}{txt}{ralign 83:(Std. err. adjusted for clustering on {res:community_sex_id})}
+{hline 18}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 19}{c |} Coefficient{col 31}  Std. err.{col 43}      z{col 51}   P>|z|{col 59}     [95% con{col 72}f. interval]
+{hline 18}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+supermarket_count {c |}{col 19}{res}{space 2}-2.878064{col 31}{space 2} 1.268181{col 42}{space 1}   -2.27{col 51}{space 3}0.023{col 59}{space 4}-5.363653{col 72}{space 3}-.3924736
+{txt}{hline 18}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{hline 110}
+{res}Panel B | Column (3)
+{txt}Outcome: Natural log cooking time used in log specifications
+Model input observations:      5161
+Observations used by estimator:      5031
+{res}{txt}{ralign 83:(Std. err. adjusted for clustering on {res:community_sex_id})}
+{hline 18}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 19}{c |} Coefficient{col 31}  Std. err.{col 43}      z{col 51}   P>|z|{col 59}     [95% con{col 72}f. interval]
+{hline 18}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+supermarket_count {c |}{col 19}{res}{space 2}-.1129408{col 31}{space 2} .0300119{col 42}{space 1}   -3.76{col 51}{space 3}0.000{col 59}{space 4}-.1717631{col 72}{space 3}-.0541185
+{txt}{hline 18}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{hline 110}
+{res}Panel B | Column (4)
+{txt}Outcome: Cooking time in minutes per day for level specifications
+Model input observations:      5161
+Observations used by estimator:      5031
+{res}{txt}{ralign 83:(Std. err. adjusted for clustering on {res:community_sex_id})}
+{hline 18}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 19}{c |} Coefficient{col 31}  Std. err.{col 43}      z{col 51}   P>|z|{col 59}     [95% con{col 72}f. interval]
+{hline 18}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+supermarket_count {c |}{col 19}{res}{space 2}-8.330365{col 31}{space 2} 2.163394{col 42}{space 1}   -3.85{col 51}{space 3}0.000{col 59}{space 4}-12.57054{col 72}{space 3}-4.090191
+{txt}{hline 18}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{hline 110}
+{res}Panel C | Column (1)
+{txt}Outcome: Natural log of analysis shopping minutes per day
+Model input observations:      5161
+Observations used by estimator:      4394
+{res}{txt}{ralign 91:(Std. err. adjusted for clustering on {res:community_sex_id})}
+{hline 26}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 27}{c |} Coefficient{col 39}  Std. err.{col 51}      z{col 59}   P>|z|{col 67}     [95% con{col 80}f. interval]
+{hline 26}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 5}supermarket_category {c |}
+{space 8}1-2 supermarkets  {c |}{col 27}{res}{space 2}-.2180305{col 39}{space 2} .0736283{col 50}{space 1}   -2.96{col 59}{space 3}0.003{col 67}{space 4}-.3623393{col 80}{space 3}-.0737217
+{txt}More than 2 supermarkets  {c |}{col 27}{res}{space 2}-.2888242{col 39}{space 2} .1218545{col 50}{space 1}   -2.37{col 59}{space 3}0.018{col 67}{space 4}-.5276546{col 80}{space 3}-.0499937
+{txt}{hline 26}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{hline 110}
+{res}Panel C | Column (2)
+{txt}Outcome: Food shopping time in minutes per day
+Model input observations:      5161
+Observations used by estimator:      5093
+{res}{txt}{ralign 91:(Std. err. adjusted for clustering on {res:community_sex_id})}
+{hline 26}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 27}{c |} Coefficient{col 39}  Std. err.{col 51}      z{col 59}   P>|z|{col 67}     [95% con{col 80}f. interval]
+{hline 26}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 5}supermarket_category {c |}
+{space 8}1-2 supermarkets  {c |}{col 27}{res}{space 2}-4.455616{col 39}{space 2} 2.378253{col 50}{space 1}   -1.87{col 59}{space 3}0.061{col 67}{space 4}-9.116906{col 80}{space 3} .2056743
+{txt}More than 2 supermarkets  {c |}{col 27}{res}{space 2}-7.478725{col 39}{space 2} 5.683648{col 50}{space 1}   -1.32{col 59}{space 3}0.188{col 67}{space 4}-18.61847{col 80}{space 3} 3.661021
+{txt}{hline 26}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{hline 110}
+{res}Panel C | Column (3)
+{txt}Outcome: Natural log cooking time used in log specifications
+Model input observations:      5161
+Observations used by estimator:      5031
+{res}{txt}{ralign 91:(Std. err. adjusted for clustering on {res:community_sex_id})}
+{hline 26}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 27}{c |} Coefficient{col 39}  Std. err.{col 51}      z{col 59}   P>|z|{col 67}     [95% con{col 80}f. interval]
+{hline 26}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 5}supermarket_category {c |}
+{space 8}1-2 supermarkets  {c |}{col 27}{res}{space 2}-.1875087{col 39}{space 2}   .05734{col 50}{space 1}   -3.27{col 59}{space 3}0.001{col 67}{space 4}-.2998931{col 80}{space 3}-.0751243
+{txt}More than 2 supermarkets  {c |}{col 27}{res}{space 2}-.2588094{col 39}{space 2} .1396917{col 50}{space 1}   -1.85{col 59}{space 3}0.064{col 67}{space 4}-.5326001{col 80}{space 3} .0149813
+{txt}{hline 26}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{hline 110}
+{res}Panel C | Column (4)
+{txt}Outcome: Cooking time in minutes per day for level specifications
+Model input observations:      5161
+Observations used by estimator:      5031
+{res}{txt}{ralign 91:(Std. err. adjusted for clustering on {res:community_sex_id})}
+{hline 26}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 27}{c |} Coefficient{col 39}  Std. err.{col 51}      z{col 59}   P>|z|{col 67}     [95% con{col 80}f. interval]
+{hline 26}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 5}supermarket_category {c |}
+{space 8}1-2 supermarkets  {c |}{col 27}{res}{space 2}-13.86214{col 39}{space 2} 4.130808{col 50}{space 1}   -3.36{col 59}{space 3}0.001{col 67}{space 4}-21.95838{col 80}{space 3} -5.76591
+{txt}More than 2 supermarkets  {c |}{col 27}{res}{space 2}-18.20491{col 39}{space 2} 9.430568{col 50}{space 1}   -1.93{col 59}{space 3}0.054{col 67}{space 4}-36.68849{col 80}{space 3}  .278662
+{txt}{hline 26}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{res}End of Table 1 replication.
+{smcl}
+{res}{sf}{ul off}

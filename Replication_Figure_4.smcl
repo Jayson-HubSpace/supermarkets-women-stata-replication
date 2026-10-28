@@ -1,0 +1,144 @@
+{smcl}
+{com}{sf}{ul off}{txt}{hline 110}
+{res}Figure 4 | Dynamic effects on women's farm and nonfarm work
+{txt}{hline 110}
+Study: Supermarkets benefit women by reducing time spent on unpaid housework without lowering nutritional quality.
+Data: China Health and Nutrition Survey, 2004, 2006, 2009 and 2011; unweighted panel analysis.
+Treatment: supermarket access within 5 km. Always-treated communities are excluded.
+Controls: age, age squared, dietary knowledge, household size, ownership of a car, motorcycle,
+refrigerator, microwave and pressure cooker, traditional market development, and local economic activity.
+Fixed effects: individual and province by survey period.
+Standard errors: clustered by community (women-only community-sex identifier).
+All numerical results below are recomputed from the supplied analysis data in Stata 18 MP.
+N reports observations used by the estimator; model input counts are shown separately.
+Significance: *** p<0.01; ** p<0.05; * p<0.10. Confidence level: 95%.
+Estimator: CS-DID regression adjustment with never-treated controls.
+Event time is measured in survey periods, not calendar years; 0 is the first observed treated period.
+The figure follows the manuscript: pre-treatment estimates at -3 and -2; a zero reference marker at -1.
+The reference marker is a display convention, not an estimated effect. Post-treatment periods are 0, 1, 2.
+Dynamic tables below use this plotting convention and report pointwise 95% confidence intervals.
+
+{hline 110}
+{res}Panel (a)
+{txt}Outcome: Participates in farm work: 1=yes 0=no
+Model input observations:      5161
+Observations used by estimator:      5093
+Clusters used:       167
+Overall treatment effect
+{res}
+{txt}{col 1}Overall ATET{col 58}{lalign 13:Number of obs}{col 71} = {res}{ralign 5:5,093}
+
+{txt}{ralign 84:(Std. err. adjusted for {res:167} clusters in {res:community_sex_id})}
+{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 20}{c |}{col 32}    Robust
+{col 1}farm_participation{col 20}{c |}       ATET{col 32}   std. err.{col 44}      z{col 52}   P>|z|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+supermarket_access {c |}
+{space 9}(1 vs 0)  {c |}{col 20}{res}{space 2}-.0550366{col 32}{space 2} .0515808{col 43}{space 1}   -1.07{col 52}{space 3}0.286{col 60}{space 4}-.1561331{col 73}{space 3} .0460598
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{txt}{space 0}{hline 13}{c  TT}{hline 12}{hline 12}{hline 12}{hline 12}{hline 12}{hline 11}
+{space 0}{space 0}{ralign 12:Event}{space 1}{c |}{space 1}{ralign 10:Estimate}{space 1}{space 1}{ralign 10:SE}{space 1}{space 1}{ralign 10:p_value}{space 1}{space 1}{ralign 10:CI_lower}{space 1}{space 1}{ralign 10:CI_upper}{space 1}{space 1}{ralign 10:Plot_per~d}{space 1}
+{space 0}{hline 13}{c   +}{hline 12}{hline 12}{hline 12}{hline 12}{hline 12}{hline 11}
+{space 0}{space 0}{ralign 12:Pre_3}{space 1}{c |}{space 1}{ralign 10:{res:{sf:  -0.08360}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.08892}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.34709}}}{space 1}{space 1}{ralign 10:{res:{sf:  -0.25787}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.09067}}}{space 1}{space 1}{ralign 10:{res:{sf:  -3.00000}}}{space 1}
+{space 0}{space 0}{ralign 12:Pre_2}{space 1}{c |}{space 1}{ralign 10:{res:{sf:   0.03598}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.05179}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.48720}}}{space 1}{space 1}{ralign 10:{res:{sf:  -0.06552}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.13748}}}{space 1}{space 1}{ralign 10:{res:{sf:  -2.00000}}}{space 1}
+{space 0}{space 0}{ralign 12:Reference}{space 1}{c |}{space 1}{ralign 10:{res:{sf:   0.00000}}}{space 1}{space 1}{ralign 10:{res:{sf:         .}}}{space 1}{space 1}{ralign 10:{res:{sf:         .}}}{space 1}{space 1}{ralign 10:{res:{sf:         .}}}{space 1}{space 1}{ralign 10:{res:{sf:         .}}}{space 1}{space 1}{ralign 10:{res:{sf:  -1.00000}}}{space 1}
+{space 0}{space 0}{ralign 12:Entry}{space 1}{c |}{space 1}{ralign 10:{res:{sf:  -0.05338}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.04594}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.24526}}}{space 1}{space 1}{ralign 10:{res:{sf:  -0.14342}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.03666}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.00000}}}{space 1}
+{space 0}{space 0}{ralign 12:Post_1}{space 1}{c |}{space 1}{ralign 10:{res:{sf:  -0.07484}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.08164}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.35929}}}{space 1}{space 1}{ralign 10:{res:{sf:  -0.23485}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.08517}}}{space 1}{space 1}{ralign 10:{res:{sf:   1.00000}}}{space 1}
+{space 0}{space 0}{ralign 12:Post_2}{space 1}{c |}{space 1}{ralign 10:{res:{sf:   0.03121}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.10212}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.75988}}}{space 1}{space 1}{ralign 10:{res:{sf:  -0.16894}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.23136}}}{space 1}{space 1}{ralign 10:{res:{sf:   2.00000}}}{space 1}
+{space 0}{hline 13}{c  BT}{hline 12}{hline 12}{hline 12}{hline 12}{hline 12}{hline 11}
+
+{hline 110}
+{res}Panel (b)
+{txt}Outcome: Participates in nonfarm work: 1=yes 0=no
+Model input observations:      5161
+Observations used by estimator:      5093
+Clusters used:       167
+Overall treatment effect
+{res}
+{txt}{col 1}Overall ATET{col 58}{lalign 13:Number of obs}{col 71} = {res}{ralign 5:5,093}
+
+{txt}{ralign 84:(Std. err. adjusted for {res:167} clusters in {res:community_sex_id})}
+{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 20}{c |}{col 32}    Robust
+{col 1}nonfarm_particip~n{col 20}{c |}       ATET{col 32}   std. err.{col 44}      z{col 52}   P>|z|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+supermarket_access {c |}
+{space 9}(1 vs 0)  {c |}{col 20}{res}{space 2}-.0142846{col 32}{space 2} .0365725{col 43}{space 1}   -0.39{col 52}{space 3}0.696{col 60}{space 4}-.0859655{col 73}{space 3} .0573963
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{txt}{space 0}{hline 13}{c  TT}{hline 12}{hline 12}{hline 12}{hline 12}{hline 12}{hline 11}
+{space 0}{space 0}{ralign 12:Event}{space 1}{c |}{space 1}{ralign 10:Estimate}{space 1}{space 1}{ralign 10:SE}{space 1}{space 1}{ralign 10:p_value}{space 1}{space 1}{ralign 10:CI_lower}{space 1}{space 1}{ralign 10:CI_upper}{space 1}{space 1}{ralign 10:Plot_per~d}{space 1}
+{space 0}{hline 13}{c   +}{hline 12}{hline 12}{hline 12}{hline 12}{hline 12}{hline 11}
+{space 0}{space 0}{ralign 12:Pre_3}{space 1}{c |}{space 1}{ralign 10:{res:{sf:  -0.02670}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.04942}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.58899}}}{space 1}{space 1}{ralign 10:{res:{sf:  -0.12356}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.07016}}}{space 1}{space 1}{ralign 10:{res:{sf:  -3.00000}}}{space 1}
+{space 0}{space 0}{ralign 12:Pre_2}{space 1}{c |}{space 1}{ralign 10:{res:{sf:  -0.00220}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.03005}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.94165}}}{space 1}{space 1}{ralign 10:{res:{sf:  -0.06109}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.05669}}}{space 1}{space 1}{ralign 10:{res:{sf:  -2.00000}}}{space 1}
+{space 0}{space 0}{ralign 12:Reference}{space 1}{c |}{space 1}{ralign 10:{res:{sf:   0.00000}}}{space 1}{space 1}{ralign 10:{res:{sf:         .}}}{space 1}{space 1}{ralign 10:{res:{sf:         .}}}{space 1}{space 1}{ralign 10:{res:{sf:         .}}}{space 1}{space 1}{ralign 10:{res:{sf:         .}}}{space 1}{space 1}{ralign 10:{res:{sf:  -1.00000}}}{space 1}
+{space 0}{space 0}{ralign 12:Entry}{space 1}{c |}{space 1}{ralign 10:{res:{sf:  -0.02961}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.04756}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.53347}}}{space 1}{space 1}{ralign 10:{res:{sf:  -0.12282}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.06359}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.00000}}}{space 1}
+{space 0}{space 0}{ralign 12:Post_1}{space 1}{c |}{space 1}{ralign 10:{res:{sf:   0.02782}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.04822}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.56396}}}{space 1}{space 1}{ralign 10:{res:{sf:  -0.06669}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.12233}}}{space 1}{space 1}{ralign 10:{res:{sf:   1.00000}}}{space 1}
+{space 0}{space 0}{ralign 12:Post_2}{space 1}{c |}{space 1}{ralign 10:{res:{sf:  -0.06898}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.07953}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.38577}}}{space 1}{space 1}{ralign 10:{res:{sf:  -0.22486}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.08690}}}{space 1}{space 1}{ralign 10:{res:{sf:   2.00000}}}{space 1}
+{space 0}{hline 13}{c  BT}{hline 12}{hline 12}{hline 12}{hline 12}{hline 12}{hline 11}
+
+{hline 110}
+{res}Panel (c)
+{txt}Outcome: Farm work in hours per day
+Model input observations:      5161
+Observations used by estimator:      4267
+Clusters used:       166
+Overall treatment effect
+{res}
+{txt}{col 1}Overall ATET{col 58}{lalign 13:Number of obs}{col 71} = {res}{ralign 5:4,267}
+
+{txt}{ralign 84:(Std. err. adjusted for {res:166} clusters in {res:community_sex_id})}
+{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 20}{c |}{col 32}    Robust
+{col 1}        farm_hours{col 20}{c |}       ATET{col 32}   std. err.{col 44}      z{col 52}   P>|z|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+supermarket_access {c |}
+{space 9}(1 vs 0)  {c |}{col 20}{res}{space 2} .4541947{col 32}{space 2} .3962532{col 43}{space 1}    1.15{col 52}{space 3}0.252{col 60}{space 4}-.3224472{col 73}{space 3} 1.230837
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{txt}{space 0}{hline 13}{c  TT}{hline 12}{hline 12}{hline 12}{hline 12}{hline 12}{hline 11}
+{space 0}{space 0}{ralign 12:Event}{space 1}{c |}{space 1}{ralign 10:Estimate}{space 1}{space 1}{ralign 10:SE}{space 1}{space 1}{ralign 10:p_value}{space 1}{space 1}{ralign 10:CI_lower}{space 1}{space 1}{ralign 10:CI_upper}{space 1}{space 1}{ralign 10:Plot_per~d}{space 1}
+{space 0}{hline 13}{c   +}{hline 12}{hline 12}{hline 12}{hline 12}{hline 12}{hline 11}
+{space 0}{space 0}{ralign 12:Pre_3}{space 1}{c |}{space 1}{ralign 10:{res:{sf:   0.05246}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.38166}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.89067}}}{space 1}{space 1}{ralign 10:{res:{sf:  -0.69557}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.80050}}}{space 1}{space 1}{ralign 10:{res:{sf:  -3.00000}}}{space 1}
+{space 0}{space 0}{ralign 12:Pre_2}{space 1}{c |}{space 1}{ralign 10:{res:{sf:   0.16871}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.26872}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.53012}}}{space 1}{space 1}{ralign 10:{res:{sf:  -0.35797}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.69538}}}{space 1}{space 1}{ralign 10:{res:{sf:  -2.00000}}}{space 1}
+{space 0}{space 0}{ralign 12:Reference}{space 1}{c |}{space 1}{ralign 10:{res:{sf:   0.00000}}}{space 1}{space 1}{ralign 10:{res:{sf:         .}}}{space 1}{space 1}{ralign 10:{res:{sf:         .}}}{space 1}{space 1}{ralign 10:{res:{sf:         .}}}{space 1}{space 1}{ralign 10:{res:{sf:         .}}}{space 1}{space 1}{ralign 10:{res:{sf:  -1.00000}}}{space 1}
+{space 0}{space 0}{ralign 12:Entry}{space 1}{c |}{space 1}{ralign 10:{res:{sf:   0.11213}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.46174}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.80813}}}{space 1}{space 1}{ralign 10:{res:{sf:  -0.79286}}}{space 1}{space 1}{ralign 10:{res:{sf:   1.01712}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.00000}}}{space 1}
+{space 0}{space 0}{ralign 12:Post_1}{space 1}{c |}{space 1}{ralign 10:{res:{sf:   1.09957}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.53270}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.03900}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.05550}}}{space 1}{space 1}{ralign 10:{res:{sf:   2.14365}}}{space 1}{space 1}{ralign 10:{res:{sf:   1.00000}}}{space 1}
+{space 0}{space 0}{ralign 12:Post_2}{space 1}{c |}{space 1}{ralign 10:{res:{sf:   1.19817}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.72293}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.09744}}}{space 1}{space 1}{ralign 10:{res:{sf:  -0.21874}}}{space 1}{space 1}{ralign 10:{res:{sf:   2.61509}}}{space 1}{space 1}{ralign 10:{res:{sf:   2.00000}}}{space 1}
+{space 0}{hline 13}{c  BT}{hline 12}{hline 12}{hline 12}{hline 12}{hline 12}{hline 11}
+
+{hline 110}
+{res}Panel (d)
+{txt}Outcome: Nonfarm work in hours per day
+Model input observations:      5161
+Observations used by estimator:      4267
+Clusters used:       166
+Overall treatment effect
+{res}
+{txt}{col 1}Overall ATET{col 58}{lalign 13:Number of obs}{col 71} = {res}{ralign 5:4,267}
+
+{txt}{ralign 84:(Std. err. adjusted for {res:166} clusters in {res:community_sex_id})}
+{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 20}{c |}{col 32}    Robust
+{col 1}     nonfarm_hours{col 20}{c |}       ATET{col 32}   std. err.{col 44}      z{col 52}   P>|z|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+supermarket_access {c |}
+{space 9}(1 vs 0)  {c |}{col 20}{res}{space 2}-.0569129{col 32}{space 2} .2498404{col 43}{space 1}   -0.23{col 52}{space 3}0.820{col 60}{space 4} -.546591{col 73}{space 3} .4327653
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{txt}{space 0}{hline 13}{c  TT}{hline 12}{hline 12}{hline 12}{hline 12}{hline 12}{hline 11}
+{space 0}{space 0}{ralign 12:Event}{space 1}{c |}{space 1}{ralign 10:Estimate}{space 1}{space 1}{ralign 10:SE}{space 1}{space 1}{ralign 10:p_value}{space 1}{space 1}{ralign 10:CI_lower}{space 1}{space 1}{ralign 10:CI_upper}{space 1}{space 1}{ralign 10:Plot_per~d}{space 1}
+{space 0}{hline 13}{c   +}{hline 12}{hline 12}{hline 12}{hline 12}{hline 12}{hline 11}
+{space 0}{space 0}{ralign 12:Pre_3}{space 1}{c |}{space 1}{ralign 10:{res:{sf:  -0.28138}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.49073}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.56638}}}{space 1}{space 1}{ralign 10:{res:{sf:  -1.24319}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.68043}}}{space 1}{space 1}{ralign 10:{res:{sf:  -3.00000}}}{space 1}
+{space 0}{space 0}{ralign 12:Pre_2}{space 1}{c |}{space 1}{ralign 10:{res:{sf:  -0.08499}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.25362}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.73755}}}{space 1}{space 1}{ralign 10:{res:{sf:  -0.58208}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.41210}}}{space 1}{space 1}{ralign 10:{res:{sf:  -2.00000}}}{space 1}
+{space 0}{space 0}{ralign 12:Reference}{space 1}{c |}{space 1}{ralign 10:{res:{sf:   0.00000}}}{space 1}{space 1}{ralign 10:{res:{sf:         .}}}{space 1}{space 1}{ralign 10:{res:{sf:         .}}}{space 1}{space 1}{ralign 10:{res:{sf:         .}}}{space 1}{space 1}{ralign 10:{res:{sf:         .}}}{space 1}{space 1}{ralign 10:{res:{sf:  -1.00000}}}{space 1}
+{space 0}{space 0}{ralign 12:Entry}{space 1}{c |}{space 1}{ralign 10:{res:{sf:  -0.14841}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.25992}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.56802}}}{space 1}{space 1}{ralign 10:{res:{sf:  -0.65785}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.36103}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.00000}}}{space 1}
+{space 0}{space 0}{ralign 12:Post_1}{space 1}{c |}{space 1}{ralign 10:{res:{sf:   0.23433}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.44163}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.59570}}}{space 1}{space 1}{ralign 10:{res:{sf:  -0.63125}}}{space 1}{space 1}{ralign 10:{res:{sf:   1.09990}}}{space 1}{space 1}{ralign 10:{res:{sf:   1.00000}}}{space 1}
+{space 0}{space 0}{ralign 12:Post_2}{space 1}{c |}{space 1}{ralign 10:{res:{sf:  -0.52725}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.71283}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.45950}}}{space 1}{space 1}{ralign 10:{res:{sf:  -1.92437}}}{space 1}{space 1}{ralign 10:{res:{sf:   0.86986}}}{space 1}{space 1}{ralign 10:{res:{sf:   2.00000}}}{space 1}
+{space 0}{hline 13}{c  BT}{hline 12}{hline 12}{hline 12}{hline 12}{hline 12}{hline 11}
+Recreated four-panel graph: figures/Figure_4.png (also saved as a Stata graph).
+
+{res}End of Figure 4 replication.
+{smcl}
+{res}{sf}{ul off}

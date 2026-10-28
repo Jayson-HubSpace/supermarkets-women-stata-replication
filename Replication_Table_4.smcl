@@ -1,0 +1,82 @@
+{smcl}
+{com}{sf}{ul off}{txt}{hline 110}
+{res}Table 4 | Supermarket access and individual dietary quality
+{txt}{hline 110}
+Study: Supermarkets benefit women by reducing time spent on unpaid housework without lowering nutritional quality.
+Data: China Health and Nutrition Survey, 2004, 2006, 2009 and 2011; unweighted panel analysis.
+Treatment: supermarket access within 5 km. Always-treated communities are excluded.
+Controls: age, age squared, dietary knowledge, household size, ownership of a car, motorcycle,
+refrigerator, microwave and pressure cooker, traditional market development, and local economic activity.
+Fixed effects: individual and province by survey period.
+Standard errors: clustered by community and sex.
+All numerical results below are recomputed from the supplied analysis data in Stata 18 MP.
+N reports observations used by the estimator; model input counts are shown separately.
+Significance: *** p<0.01; ** p<0.05; * p<0.10. Confidence level: 95%.
+Estimator: CS-DID regression adjustment, never-treated controls; overall ATET.
+Sample: adult women and men. Each coefficient is measured in score points.
+Columns: (1) Dietary Diversity Score; (2) Chinese Food Pagoda Score; (3) Dietary Nutrient Density Score.
+Higher scores indicate greater dietary diversity, dietary balance and nutrient density, respectively.
+
+{hline 110}
+{res}Column (1)
+{txt}Outcome: Dietary Diversity Score
+Model input observations:     10051
+Observations used by estimator:      9824
+Clusters used:       338
+Overall treatment effect
+{res}
+{txt}{col 1}Overall ATET{col 58}{lalign 13:Number of obs}{col 71} = {res}{ralign 5:9,824}
+
+{txt}{ralign 84:(Std. err. adjusted for {res:338} clusters in {res:community_sex_id})}
+{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 20}{c |}{col 32}    Robust
+{col 1}               dds{col 20}{c |}       ATET{col 32}   std. err.{col 44}      z{col 52}   P>|z|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+supermarket_access {c |}
+{space 9}(1 vs 0)  {c |}{col 20}{res}{space 2} .0661672{col 32}{space 2} .0721103{col 43}{space 1}    0.92{col 52}{space 3}0.359{col 60}{space 4}-.0751664{col 73}{space 3} .2075008
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}Outcome mean in estimator sample:    3.48836
+
+{hline 110}
+{res}Column (2)
+{txt}Outcome: Chinese Food Pagoda Score
+Model input observations:     10051
+Observations used by estimator:      9824
+Clusters used:       338
+Overall treatment effect
+{res}
+{txt}{col 1}Overall ATET{col 58}{lalign 13:Number of obs}{col 71} = {res}{ralign 5:9,824}
+
+{txt}{ralign 84:(Std. err. adjusted for {res:338} clusters in {res:community_sex_id})}
+{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 20}{c |}{col 32}    Robust
+{col 1}              cfps{col 20}{c |}       ATET{col 32}   std. err.{col 44}      z{col 52}   P>|z|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+supermarket_access {c |}
+{space 9}(1 vs 0)  {c |}{col 20}{res}{space 2}-.0142692{col 32}{space 2} .0777539{col 43}{space 1}   -0.18{col 52}{space 3}0.854{col 60}{space 4} -.166664{col 73}{space 3} .1381256
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}Outcome mean in estimator sample:    2.30614
+
+{hline 110}
+{res}Column (3)
+{txt}Outcome: Dietary Nutrient Density Score
+Model input observations:     10051
+Observations used by estimator:      9824
+Clusters used:       338
+Overall treatment effect
+{res}
+{txt}{col 1}Overall ATET{col 58}{lalign 13:Number of obs}{col 71} = {res}{ralign 5:9,824}
+
+{txt}{ralign 84:(Std. err. adjusted for {res:338} clusters in {res:community_sex_id})}
+{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 20}{c |}{col 32}    Robust
+{col 1}              dnds{col 20}{c |}       ATET{col 32}   std. err.{col 44}      z{col 52}   P>|z|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+supermarket_access {c |}
+{space 9}(1 vs 0)  {c |}{col 20}{res}{space 2} 2.557689{col 32}{space 2} 1.018803{col 43}{space 1}    2.51{col 52}{space 3}0.012{col 60}{space 4} .5608718{col 73}{space 3} 4.554505
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}Outcome mean in estimator sample:   32.56803
+
+{res}End of Table 4 replication.
+{smcl}
+{res}{sf}{ul off}

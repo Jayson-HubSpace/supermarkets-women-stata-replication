@@ -1,0 +1,174 @@
+{smcl}
+{com}{sf}{ul off}{txt}{hline 110}
+{res}Table 2 | Supermarket access and women's time use by subgroup
+{txt}{hline 110}
+Study: Supermarkets benefit women by reducing time spent on unpaid housework without lowering nutritional quality.
+Data: China Health and Nutrition Survey, 2004, 2006, 2009 and 2011; unweighted panel analysis.
+Treatment: supermarket access within 5 km. Always-treated communities are excluded.
+Controls: age, age squared, dietary knowledge, household size, ownership of a car, motorcycle,
+refrigerator, microwave and pressure cooker, traditional market development, and local economic activity.
+Fixed effects: individual and province by survey period.
+Standard errors: clustered by community (women-only community-sex identifier).
+All numerical results below are recomputed from the supplied analysis data in Stata 18 MP.
+N reports observations used by the estimator; model input counts are shown separately.
+Significance: *** p<0.01; ** p<0.05; * p<0.10. Confidence level: 95%.
+Estimator: CS-DID regression adjustment, never-treated controls; overall ATET.
+Panel A: log shopping minutes. Panel B: log cooking minutes.
+Columns: (1) urban; (2) rural; (3) low baseline market group; (4) high baseline market group.
+Baseline market groups retain the supplied classification; unknown baseline scores enter the high group.
+
+{hline 110}
+{res}Panel A | Column (1) | Urban
+{txt}Outcome: Natural log of analysis shopping minutes per day
+Model input observations:      1103
+Observations used by estimator:       985
+Clusters used:        55
+Overall treatment effect
+{res}
+{txt}{col 1}Overall ATET{col 60}{lalign 13:Number of obs}{col 73} = {res}{ralign 3:985}
+
+{txt}{ralign 84:(Std. err. adjusted for {res:55} clusters in {res:community_sex_id})}
+{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 20}{c |}{col 32}    Robust
+{col 1}log_shopping_min~s{col 20}{c |}       ATET{col 32}   std. err.{col 44}      z{col 52}   P>|z|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+supermarket_access {c |}
+{space 9}(1 vs 0)  {c |}{col 20}{res}{space 2} .0857391{col 32}{space 2} .1206201{col 43}{space 1}    0.71{col 52}{space 3}0.477{col 60}{space 4}-.1506719{col 73}{space 3} .3221501
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{hline 110}
+{res}Panel A | Column (2) | Rural
+{txt}Outcome: Natural log of analysis shopping minutes per day
+Model input observations:      4058
+Observations used by estimator:      3409
+Clusters used:       112
+Overall treatment effect
+{res}
+{txt}{col 1}Overall ATET{col 58}{lalign 13:Number of obs}{col 71} = {res}{ralign 5:3,409}
+
+{txt}{ralign 84:(Std. err. adjusted for {res:112} clusters in {res:community_sex_id})}
+{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 20}{c |}{col 32}    Robust
+{col 1}log_shopping_min~s{col 20}{c |}       ATET{col 32}   std. err.{col 44}      z{col 52}   P>|z|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+supermarket_access {c |}
+{space 9}(1 vs 0)  {c |}{col 20}{res}{space 2}-.3680723{col 32}{space 2} .1074954{col 43}{space 1}   -3.42{col 52}{space 3}0.001{col 60}{space 4}-.5787595{col 73}{space 3}-.1573851
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{hline 110}
+{res}Panel A | Column (3) | Low baseline market group
+{txt}Outcome: Natural log of analysis shopping minutes per day
+Model input observations:      2361
+Observations used by estimator:      1991
+Clusters used:        64
+Overall treatment effect
+{res}
+{txt}{col 1}Overall ATET{col 58}{lalign 13:Number of obs}{col 71} = {res}{ralign 5:1,991}
+
+{txt}{ralign 84:(Std. err. adjusted for {res:64} clusters in {res:community_sex_id})}
+{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 20}{c |}{col 32}    Robust
+{col 1}log_shopping_min~s{col 20}{c |}       ATET{col 32}   std. err.{col 44}      z{col 52}   P>|z|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+supermarket_access {c |}
+{space 9}(1 vs 0)  {c |}{col 20}{res}{space 2}-.4480261{col 32}{space 2} .1668744{col 43}{space 1}   -2.68{col 52}{space 3}0.007{col 60}{space 4} -.775094{col 73}{space 3}-.1209583
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{hline 110}
+{res}Panel A | Column (4) | High baseline market group
+{txt}Outcome: Natural log of analysis shopping minutes per day
+Model input observations:      2800
+Observations used by estimator:      2403
+Clusters used:       103
+Overall treatment effect
+{res}
+{txt}{col 1}Overall ATET{col 58}{lalign 13:Number of obs}{col 71} = {res}{ralign 5:2,403}
+
+{txt}{ralign 84:(Std. err. adjusted for {res:103} clusters in {res:community_sex_id})}
+{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 20}{c |}{col 32}    Robust
+{col 1}log_shopping_min~s{col 20}{c |}       ATET{col 32}   std. err.{col 44}      z{col 52}   P>|z|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+supermarket_access {c |}
+{space 9}(1 vs 0)  {c |}{col 20}{res}{space 2}-.0711757{col 32}{space 2} .1266279{col 43}{space 1}   -0.56{col 52}{space 3}0.574{col 60}{space 4}-.3193619{col 73}{space 3} .1770104
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{hline 110}
+{res}Panel B | Column (1) | Urban
+{txt}Outcome: Natural log cooking time used in log specifications
+Model input observations:      1103
+Observations used by estimator:      1047
+Clusters used:        55
+Overall treatment effect
+{res}
+{txt}{col 1}Overall ATET{col 58}{lalign 13:Number of obs}{col 71} = {res}{ralign 5:1,047}
+
+{txt}{ralign 84:(Std. err. adjusted for {res:55} clusters in {res:community_sex_id})}
+{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 20}{c |}{col 32}    Robust
+{col 1}log_cooking_minu~s{col 20}{c |}       ATET{col 32}   std. err.{col 44}      z{col 52}   P>|z|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+supermarket_access {c |}
+{space 9}(1 vs 0)  {c |}{col 20}{res}{space 2} .2054827{col 32}{space 2} .2861133{col 43}{space 1}    0.72{col 52}{space 3}0.473{col 60}{space 4}-.3552891{col 73}{space 3} .7662544
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{hline 110}
+{res}Panel B | Column (2) | Rural
+{txt}Outcome: Natural log cooking time used in log specifications
+Model input observations:      4058
+Observations used by estimator:      3984
+Clusters used:       112
+Overall treatment effect
+{res}
+{txt}{col 1}Overall ATET{col 58}{lalign 13:Number of obs}{col 71} = {res}{ralign 5:3,984}
+
+{txt}{ralign 84:(Std. err. adjusted for {res:112} clusters in {res:community_sex_id})}
+{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 20}{c |}{col 32}    Robust
+{col 1}log_cooking_minu~s{col 20}{c |}       ATET{col 32}   std. err.{col 44}      z{col 52}   P>|z|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+supermarket_access {c |}
+{space 9}(1 vs 0)  {c |}{col 20}{res}{space 2}-.3355844{col 32}{space 2} .0825226{col 43}{space 1}   -4.07{col 52}{space 3}0.000{col 60}{space 4}-.4973258{col 73}{space 3}-.1738431
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{hline 110}
+{res}Panel B | Column (3) | Low baseline market group
+{txt}Outcome: Natural log cooking time used in log specifications
+Model input observations:      2361
+Observations used by estimator:      2313
+Clusters used:        64
+Overall treatment effect
+{res}
+{txt}{col 1}Overall ATET{col 58}{lalign 13:Number of obs}{col 71} = {res}{ralign 5:2,313}
+
+{txt}{ralign 84:(Std. err. adjusted for {res:64} clusters in {res:community_sex_id})}
+{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 20}{c |}{col 32}    Robust
+{col 1}log_cooking_minu~s{col 20}{c |}       ATET{col 32}   std. err.{col 44}      z{col 52}   P>|z|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+supermarket_access {c |}
+{space 9}(1 vs 0)  {c |}{col 20}{res}{space 2}-.3397489{col 32}{space 2} .1491946{col 43}{space 1}   -2.28{col 52}{space 3}0.023{col 60}{space 4} -.632165{col 73}{space 3}-.0473328
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{hline 110}
+{res}Panel B | Column (4) | High baseline market group
+{txt}Outcome: Natural log cooking time used in log specifications
+Model input observations:      2800
+Observations used by estimator:      2718
+Clusters used:       103
+Overall treatment effect
+{res}
+{txt}{col 1}Overall ATET{col 58}{lalign 13:Number of obs}{col 71} = {res}{ralign 5:2,718}
+
+{txt}{ralign 84:(Std. err. adjusted for {res:103} clusters in {res:community_sex_id})}
+{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 20}{c |}{col 32}    Robust
+{col 1}log_cooking_minu~s{col 20}{c |}       ATET{col 32}   std. err.{col 44}      z{col 52}   P>|z|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+supermarket_access {c |}
+{space 9}(1 vs 0)  {c |}{col 20}{res}{space 2}-.0735738{col 32}{space 2} .0961891{col 43}{space 1}   -0.76{col 52}{space 3}0.444{col 60}{space 4} -.262101{col 73}{space 3} .1149533
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{res}End of Table 2 replication.
+{smcl}
+{res}{sf}{ul off}
