@@ -1,3 +1,5 @@
+[![Graphical abstract: supermarket access, women's time, dietary quality, and farm work](assets/graphical-abstract.png)](assets/graphical-abstract.png)
+
 README
 Regression Results for the Main Tables and Figures
 
